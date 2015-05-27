@@ -27,10 +27,10 @@ public class TheLaby extends JFrame {
 		
 		con = new ConexionDB("localhost", "thelaby", "root", "tonphp");
 		
-		//venC= new VentanaComprobacion(this);
+		venC= new VentanaComprobacion(this);
 		venE = new VentanaEquipo(this,venU);
 		venU = new VentanaUsuario(this,con);
-		//venC.setBounds(0, 0, 430, 300);
+		venC.setBounds(0, 0, 430, 300);
 		venE.setBounds(0, 0, 430, 300);
 		venU.setBounds(0, 0, 430, 300);
 		
@@ -54,7 +54,7 @@ public class TheLaby extends JFrame {
 		
 		panel.add(venU,"usuario");
 		panel.add(venE,"equipo");
-		//panel.add(venC,"comprobacion");
+		panel.add(venC,"comprobacion");
 		
 		contentPane.add(panel, BorderLayout.CENTER);
 			

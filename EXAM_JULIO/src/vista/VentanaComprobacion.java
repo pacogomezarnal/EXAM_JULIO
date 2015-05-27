@@ -5,17 +5,26 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class VentanaComprobacion extends JPanel {
 	private JTextField areaError;
+	private TheLaby prin;
 
 	/**
 	 * Create the panel.
 	 */
-	public VentanaComprobacion() {
+	public VentanaComprobacion(TheLaby the) {
+		prin=the;
 		setLayout(null);
 
 		JButton btnAtras = new JButton("<< Atras");
+		btnAtras.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				prin.cambiar("equipo");
+			}
+		});
 		btnAtras.setBounds(10, 266, 120, 23);
 		add(btnAtras);
 		

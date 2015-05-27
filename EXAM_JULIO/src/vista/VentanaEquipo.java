@@ -81,6 +81,11 @@ public class VentanaEquipo extends JPanel {
 		add(equipo);*/
 		
 		JButton btnSiguiente = new JButton("Siguiente >>");
+		btnSiguiente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				prin.cambiar("comprobacion");
+			}
+		});
 		btnSiguiente.setBounds(319, 266, 120, 23);
 		add(btnSiguiente);
 		
