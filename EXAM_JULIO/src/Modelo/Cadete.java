@@ -1,5 +1,7 @@
 package Modelo;
 
+import vista.VentanaUsuario;
+
 //Clase que almacenará todos los datos de un cadete
 public class Cadete {
 	//Propiedades
@@ -15,7 +17,7 @@ public class Cadete {
 		
 	}
 	
-	public Cadete(int id,
+	public Cadete(VentanaUsuario venU,int id,
 				  String nombre,
 				  String apellidos,
 				  int edad,

@@ -9,11 +9,11 @@ public class ConexionDB {
 	// DATOS DE LA CONEXION
 	static final String CONTROLADOR_MYSQL= "com.mysql.jdbc.Driver";
 	
-	//DATOS POR DEFECTO
+	/*//DATOS POR DEFECTO
 	private static final String HOST="localhost";
 	private static final String BBDD="thelaby";
 	private static final String USER="root";
-	private static final String PASS="";
+	private static final String PASS="tonphp";*/
 	
 	//DATOS DE LA BBDD
 	private String host;
@@ -25,10 +25,10 @@ public class ConexionDB {
 	//Conexion
 	private static Connection conexion = null;// maneja la conexió
 	
-	//Instancia unica
-	private static ConexionDB instance = null;
+	/*//Instancia unica
+	private static ConexionDB instance = null;*/
 	
-	private ConexionDB(String HOST,String BBDD,String USER,String PASS) {
+	public ConexionDB(String HOST,String BBDD,String USER,String PASS) {
 		this.host=HOST;
 		this.bbdd=BBDD;
 		this.user=USER;
@@ -36,7 +36,7 @@ public class ConexionDB {
 		this.url="jdbc:mysql://"+this.host+"/"+this.bbdd;
 	}
 	
-	//Implementar SingleTon
+	/*//Implementar SingleTon
 	public static ConexionDB getInstance(String HOST,String BBDD,String USER,String PASS) {
 	      if(instance == null) {
 	         instance = null;
@@ -51,7 +51,7 @@ public class ConexionDB {
 	         instance = null;
 	      }
 	      return instance;
-	  }
+	  }*/
 	
 	//Metodo que permite la conexion a la base de datos
 	public boolean connectDB(){
