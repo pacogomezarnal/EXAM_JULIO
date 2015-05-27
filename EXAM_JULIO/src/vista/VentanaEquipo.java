@@ -79,6 +79,7 @@ public class VentanaEquipo extends JPanel {
 		
 		}
 		add(equipo);*/
+		//olaaaa
 		
 		JButton btnSiguiente = new JButton("Siguiente >>");
 		btnSiguiente.addActionListener(new ActionListener() {
